@@ -3,7 +3,7 @@ using namespace std;
 
 namespace ariel{
     const double eps = 0.000001; 
-    map<string, map<string, double>> NumberWithUnits::con_map; // init con_map
+    map<string, map<string, double>> NumberWithUnits::con_map = {}; // init con_map
 
     void NumberWithUnits::read_units(ifstream &file_name){
         double first = 0;
